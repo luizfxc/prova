@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f0f4f8;
+  color: #333;
+}
+
+header {
+  background: #6c63ff;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.hidden {
+  display: none;
+}
+
+input, button, textarea, select {
+  width: 100%;
+  padding: 0.7rem;
+  margin: 0.5rem 0;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+button {
+  background: #6c63ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #554cd9;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+nav button {
+  flex: 1;
+  background: #f5f7ff;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.card {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 1rem;
+  margin: 1rem 0;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+}
+
+.progress {
+  height: 10px;
+  border-radius: 10px;
+  background: #e0e0e0;
+  margin-top: 0.5rem;
+  position: relative;
+}
+
+.progress-bar {
+  height: 10px;
+  border-radius: 10px;
+  background: #6c63ff;
+  width: 0%;
+  transition: width 0.4s ease;
+}
+
+/* Regua numérica de 1 a 10 */
+.progress-ruler {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: #666;
+  margin-top: 0.15rem;
+  user-select: none;
+}
+
+.illustration {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.selo {
+  background: #ffd700;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  display: inline-block;
+  font-weight: bold;
+  color: #000;
+}
+
+textarea {
+  height: 100px;
+}
+
+#notificacao {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #eaf5ff;
+  border-left: 4px solid #2196f3;
+  display: none;
+}
+
+#spinnerContainer {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+#spinner {
+  transform-origin: center;
+}
+
+#spinnerText {
+  font-weight: bold;
+  user-select: none;
+}

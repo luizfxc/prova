@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MetaTrack</title>
+  <link rel="stylesheet" href="prova.css" />
+</head>
+<body>
+  <header>MetaTrack 🧠 - Evolua com estilo</header>
+
+  <!-- Login -->
+  <div class="container" id="loginScreen">
+    <h2>Entrar</h2>
+    <input type="text" id="loginUser" placeholder="Usuário" />
+    <input type="password" id="loginPass" placeholder="Senha" />
+    <button onclick="login()">Entrar</button>
+    <p>Não tem conta? <a href="#" onclick="showRegister()">Cadastre-se</a></p>
+  </div>
+
+  <!-- Cadastro -->
+  <div class="container hidden" id="registerScreen">
+    <h2>Cadastro</h2>
+    <input type="text" id="registerUser" placeholder="Novo usuário" />
+    <input type="password" id="registerPass" placeholder="Nova senha" />
+    <button onclick="register()">Cadastrar</button>
+    <p>Já tem conta? <a href="#" onclick="showLogin()">Entrar</a></p>
+  </div>
+
+  <!-- App -->
+  <div class="container hidden" id="mainApp">
+    <img src="https://cdn.pixabay.com/photo/2017/10/10/21/48/brain-2837631_1280.png" class="illustration" alt="Cérebro" />
+    <nav>
+      <button onclick="showTab('menu')">🏠 Menu</button>
+      <button onclick="showTab('objetivos')">🎯 Objetivos</button>
+      <button onclick="showTab('habitos')">📋 Hábitos</button>
+      <button onclick="showTab('anotacoes')">📝 Anotações</button>
+      <button onclick="showTab('feedback')">⭐ Feedback</button>
+      <button onclick="logout()">🚪 Sair</button>
+    </nav>
+
+    <!-- Menu -->
+    <div class="tab" id="menu">
+      <h2>Menu</h2>
+      <button onclick="alert('Valor Premium: R$30')">💎 Seja Premium</button>
+      <p class="selo" id="seloAtual">🏅 Selo: Bronze</p>
+      <div id="notificacao"></div>
+
+      <!-- Spinner -->
+      <div id="spinnerContainer">
+        <svg id="spinner" width="150" height="150" viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="45" stroke="#ddd" stroke-width="10" fill="none"/>
+          <circle id="spinnerProgress" cx="50" cy="50" r="45" stroke="#6c63ff" stroke-width="10" fill="none"
+            stroke-linecap="round"
+            stroke-dasharray="283"
+            stroke-dashoffset="283"
+            transform="rotate(-90 50 50)"
+          />
+          <text id="spinnerText" x="50" y="55" text-anchor="middle" font-size="18" fill="#333">0%</text>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Objetivos -->
+    <div class="tab hidden" id="objetivos">
+      <h2>Objetivos</h2>
+      <input id="novoObjetivo" placeholder="Novo objetivo..." />
+      <input type="date" id="dataObjetivo" />
+      <button onclick="addItem('objetivos')">Adicionar</button>
+      <div id="listaObjetivos"></div>
+    </div>
+
+    <!-- Hábitos -->
+    <div class="tab hidden" id="habitos">
+      <h2>Hábitos Diários</h2>
+      <input id="novoHabito" placeholder="Novo hábito..." />
+      <input type="date" id="dataHabito" />
+      <button onclick="addItem('habitos')">Adicionar</button>
+      <div id="listaHabitos"></div>
+    </div>
+
+    <!-- Anotações -->
+    <div class="tab hidden" id="anotacoes">
+      <h2>Anotações Pessoais</h2>
+      <textarea id="anotacoesTexto" placeholder="Escreva aqui..."></textarea>
+      <button onclick="salvarAnotacoes()">Salvar</button>
+    </div>
+
+    <!-- Feedback -->
+    <div class="tab hidden" id="feedback">
+      <h2>Nos Avalie</h2>
+      <textarea id="feedbackTexto" placeholder="Seu feedback..."></textarea>
+      <button onclick="enviarFeedback()">Enviar</button>
+    </div>
+  </div>
+
+  <script src="prova.js"></script>
+</body>
+</html>
