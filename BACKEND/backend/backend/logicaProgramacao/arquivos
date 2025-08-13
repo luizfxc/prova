@@ -1,0 +1,22 @@
+#ARQUIVOS
+
+#with open ("arquivo.txt" , modo)
+
+# modo de leitura -> "r"
+# modo de escrita -> "w" -  substitui o conteudo
+# modo de escrita -> "a" - acrescenta conteudo
+
+# Open("arquivo.txt" , 'w')
+#     AS arquivo
+
+# arquivo.write("olá mundo")
+# arquivos.write("tudo bem")
+
+# conteudo= arquivo.read()
+# print(conteudo)
+
+# nome:"giovana"
+
+# nome.upper() - converte tudo para maiúsculo
+# nome.lower() - " "  " "   " " " " minusculo
+# nome.strip() - remover todos os espaços
