@@ -13,7 +13,6 @@
 
 import json
 
-# Funções já definidas
 def salvar_livro(livro):
     try:
         with open('biblioteca.json', 'r', encoding='utf-8') as file:
@@ -51,7 +50,7 @@ def listar_livros():
     except (FileNotFoundError, json.JSONDecodeError):
         print("A biblioteca ainda não tem livros cadastrados.")
 
-# Menu principal
+
 def main():
     while True:
         print("\n--- Sistema de Gerenciamento da Biblioteca ---")
@@ -92,6 +91,6 @@ def main():
         else:
             print("Opção inválida. Tente novamente.")
 
-# Executa o menu
+
 if __name__ == "__main__":
     main()
