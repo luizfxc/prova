@@ -3,3 +3,5 @@ C:\Users\Aluno\AppData\Roaming\Python\Python313\Scripts\django-admin startprojec
 python manage.py makemigrations
 
 python manage.py migrate
+
+python manage.py runserver -> rodar o projeto
