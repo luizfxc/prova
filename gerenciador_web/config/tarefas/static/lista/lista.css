@@ -1,9 +1,80 @@
-body{
-    background-color: bisque;
+body, h1, h2, p, small {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1{
-    color: blanchedalmond;
-    border-bottom: 0cap;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
 }
 
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+hr {
+    margin-bottom: 30px;
+    border: none;
+    height: 2px;
+    background-color: #ccc;
+}
+
+
+.tarefa {
+    background-color: #fff;
+    border-left: 6px solid #3498db;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.tarefa:hover {
+    background-color: #f0f8ff;
+}
+
+
+.tarefa.concluida {
+    border-left-color: #2ecc71;
+    background-color: #eafaf1;
+    opacity: 0.8;
+    text-decoration: line-through;
+}
+
+.tarefa h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.tarefa h2 a {
+    text-decoration: none;
+    color: #2980b9;
+}
+
+.tarefa h2 a:hover {
+    text-decoration: underline;
+}
+
+.tarefa p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.tarefa small {
+    color: #888;
+}
+
+p a {
+    color: #e67e22;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}

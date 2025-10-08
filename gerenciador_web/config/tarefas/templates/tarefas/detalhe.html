@@ -11,5 +11,7 @@
     <p><strong>Descrição:</strong>{{ tarefa.descricao|linebreaks }}</p>
     <p><strong>Status:</strong> {% if tarefa.concluida %}concluida{% else %}Pendente{% endif %}</p>    
      <small>Criada em: {{ tarefa.data_criacao}}</small>
+     <hr>
+     <a href="{% url 'listar_tarefas' %}"> Voltar para Lista</a>
 </body>
 </html>
