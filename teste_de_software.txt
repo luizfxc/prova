@@ -1,10 +1,3 @@
-C:\Users\Aluno\AppData\Roaming\Python\Python313\Scripts\django-admin startproject backend
-
-python manage.py makemigrations
-
-python manage.py migrate
-
-python manage.py runserver -> rodar o projeto
 
 DIFERENÇA CRUCIAL: QA vs QC
 
@@ -29,3 +22,7 @@ MODELO DE DESENVOLVIMENTO: Cascata( Waterfall)
 O modelo tradicional, sequencial e rígido.
 
 Como o teste funcional aqui?
+É uma fase isolado, que só acontece depois que todo o desenvolvimento terminou
+
+Princpal desvantagem:
+Bugs são descobertos muito tarde,tornando a correção complexa,demorada e cara
