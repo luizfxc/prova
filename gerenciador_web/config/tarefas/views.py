@@ -69,8 +69,12 @@ def alterar_tarefa(request, tarefa_id):
     }
     return render(request, 'tarefas/form_tarefa.html', context)
 
-
-
+def excluir_tarefa(request, tarefa_id):
+    tarefa = get_object_or_404(Tarefa, pk = tarefa_id)
+    if request.method == 'POST':
+        tarefa.delete()
+        return redirect('listar_tarefas')
+    return render (request,'tarefas/confirmar_exclusao.html',{'tarefa':tarefa})
 
     
     #métodos http
